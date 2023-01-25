@@ -1,0 +1,49 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+
+    display: grid;
+
+    grid-template-rows:300px 150px 400px 30px;
+    grid-template-columns: 250px 600px ;
+    grid-gap: 2px;
+
+   /* grid-template-areas: 
+    "hd"
+    "side"
+    "main"
+    "ft";*/
+
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd "
+    "sd sd main main main main main main"
+    "ft ft ft ft  ft ft ft ft "
+     
+    ;
+
+}
+
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+}
+
+#header{
+    grid-area: hd;
+}
+
+#footer{
+    grid-area: ft;
+}
+
+#sidebar{
+    grid-area: sd;
+}
+
+#content{
+    grid-area: main;
+}
